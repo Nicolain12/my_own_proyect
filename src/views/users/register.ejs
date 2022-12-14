@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../partials/head') %>
+
+<body>
+
+    <%- include('../partials/header') %> 
+
+    <main class="register-main">
+
+        <form class="form-register" action="/users/register" method="POST">
+            <h4>Create account</h4>
+            <div class="form-register-input-div">
+
+                <label for="userImg">Your profile image</label>
+                <label class="img-icon" for="userImg"><i class="fa-solid fa-image"></i></label>
+                <input class="form-register-img"  type="file" name="userImg"  id="userImg" placeholder="First and last name">
+
+                <label for="name">Your name</label>
+                <input class="form-register-input"  type="name" name="name"  id="name" placeholder="First and last name">
+
+
+                <label for="email">Your Email</label>
+                <input class="form-register-input"  type="email" name="email"  id="email" placeholder="Your Email">
+
+                <label for="password">password</label>
+                <input class="form-register-input" type="password" name="password" id="password" placeholder="At least 6 characters">    
+
+                <label for="confPassword">Confirm your password</label>
+                <input class="form-register-input" type="password" name="confPassword" id="confPassword">
+
+            </div>
+
+            
+            <button class="form-register-button" type="submit">Continue</button>
+            <p class="form-register-forget">Already have an account? <a href="#">Sing in </a></p>
+
+        </form>
+
+    </main>
+
+    <%- include('../partials/footer') %> 
+    
+</body>
+
+</html>

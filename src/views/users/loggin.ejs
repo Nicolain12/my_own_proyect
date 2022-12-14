@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../partials/head') %>
+
+<body>
+
+    <%- include('../partials/header') %> 
+
+    <main class="loggin-main">
+
+        <form class="form-loggin" action="/users/loggin" method="POST">
+            <h4>Sign in</h4>
+            <div class="form-loggin-input-div">
+                <input class="form-loggin-input"  type="email" name="email"  id="email" placeholder="Your Email">
+                <input class="form-loggin-input" type="password" name="password" id="password" placeholder="Your password">    
+            </div>
+            <label for="remember" class="form-loggin-remember"> <input type="checkbox" name="remember" id="remember" > Remember me </label>
+            <button class="form-loggin-button" type="submit">Logg in</button>
+            <p class="form-loggin-forget"> forget the password? <a href="#"> Click here</a></p>
+            <p class="form-loggin-new"> New here? <a href=""></a> <a href="#"> Click here to create an acount</a></p>
+
+        </form>
+
+    </main>
+
+    <%- include('../partials/footer') %> 
+    
+</body>
+
+</html>

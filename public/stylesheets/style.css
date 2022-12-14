@@ -1,0 +1,399 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+}
+
+/* FONT */
+/* 
+font-family: 'Comfortaa', cursive;
+*/
+
+/* COLORS */
+/*
+.color1 {color: #c2bc9c;}
+.color2 {color: #d5d7bb;}
+.color3 {color: #212954;}
+.color4 {color: #304a73;}
+.color5 {color: #b0b7c7;} 
+*/
+
+
+.main-header{
+  background-color:#212954;
+}
+
+.main-index{
+  background-color: #b0b7c7;
+}
+
+
+/****** HEADER *******/
+
+.main-header{
+  padding-top: 3%;
+  border: 1px solid black;
+  /* height: 15vh; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* HEADER SECTIONS */
+
+.header-section1{
+  width: 100%;
+  height: 80%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* main.div */
+.div-header-form{
+  width: 100%;
+}
+.img-search-div{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+
+/* HEADER IMG */
+
+.div-header-img{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.div-header-img a{
+  width: 60%;
+}
+.div-header-img img{
+  width: 100%;
+}
+
+
+/* HEADER FORM */
+
+.div-header-form{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-form{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+}
+.header-input{
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  padding-left: 2%;
+  outline: none;
+}
+
+
+.header-search-buttom{
+  width: 20%;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.header-search-buttom:hover{
+  background-color: #304a73;
+  border-radius: 0;
+}
+.header-search-buttom:hover i {
+  color: white;
+  font-size: 18px;
+}
+
+
+/* HEADER INFO */
+
+.div-header-info{
+  /* height: 30px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+
+
+
+/* HEADER LINKS */
+.header-section2{
+  display: none;
+  width: 100%;
+  height: 20%;
+  margin: 2% 0 1%;
+}
+
+.header-links{
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-links li{
+    width: 20%;
+}
+
+.header-links li a{
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.header-links li a:hover{
+  font-weight: 600;
+}
+.header-links li i{
+  margin-left: 5%;
+  color: white;
+
+}
+
+@media (min-width: 768px){
+  .main-header{
+    padding-top: 0;
+  }
+  
+  /* links */
+  .header-section2{
+    display: flex;
+  }
+  .header-form{
+      height: 50%;
+  }
+
+  /* user and cart */
+  .header-section1{
+    flex-direction: row
+  }
+  .div-header-info {
+    width: 30%;
+    height: 100%;
+}
+.div-header-info h4{
+  margin-right: 2%;
+}
+
+.img-search-div {
+  width: 70%;
+}
+}
+
+
+
+/****** INDEX *******/
+
+.main-index{
+  height: 85vh;
+}
+.main-index h1{
+  margin-top: 0;
+}
+
+/****** FOOTER *******/
+
+.main-footer{
+  border: 1px solid black;
+}
+
+/****** ARTICLE ******/
+
+/****** LOGGIN ******/
+
+.loggin-main{
+ display: flex;
+ justify-content: center;
+}
+
+.form-loggin{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #b0b7c7;
+}
+.form-loggin h4{
+  font-size: 22px;
+}
+.form-loggin-input-div{
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.form-loggin-input{
+  width: 60%;
+  height: 30%;
+  margin-top: 2%;
+  /* border: none; */
+  border: 1px solid #304a73;
+  border-radius: 5px;
+  padding-left: 2%;
+  outline: none;
+}
+.form-loggin-remember{
+  margin-top: 3%;
+  cursor: pointer;
+}
+.form-loggin-button{
+  margin-top: 3%;
+  width: 30%;
+  height: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.form-loggin-button:hover{
+  box-shadow: 0 0 50px rgb(100 100 100);
+background-color: #304a73;
+color: #FFFFFF;
+}
+.form-loggin-forget{
+  margin-top: 3%;
+}
+.form-loggin-forget a{
+  text-decoration: none;
+  color: inherit;
+}
+.form-loggin-forget:hover a{
+  font-weight: 600;
+  text-decoration: underline;
+}
+.form-loggin-new a{
+  text-decoration: none;
+  color: inherit;
+}
+.form-loggin-new:hover a{
+  font-weight: 600;
+  text-decoration: underline;
+}
+@media (min-width: 768px){
+  .form-loggin{
+    margin: 2% 0;
+    width: 768px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(100 100 100);
+  }
+}
+
+
+/****** REGISTER ******/
+.register-main{
+  display: flex;
+  justify-content: center;
+ }
+ 
+ .form-register{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   background-color: #b0b7c7;
+ }
+ .form-register h4{
+   font-size: 22px;
+   margin: 2% 0;
+ }
+ .form-register-input-div{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+ }
+ .form-register-input-div label{
+  margin-top: 2%;
+ }
+ .form-register-input{
+   width: 60%;
+   height: 3rem;
+   margin-top: 2%;
+   /* border: none; */
+   border: 1px solid #304a73;
+   border-radius: 5px;
+   padding-left: 2%;
+   outline: none;
+ }
+ .form-register-remember{
+   margin-top: 3%;
+   cursor: pointer;
+ }
+ .form-register-button{
+   margin-top: 3%;
+   width: 30%;
+   height: 2rem;
+   font-weight: 600;
+   cursor: pointer;
+ }
+ .form-register-button:hover{
+   box-shadow: 0 0 50px rgb(100 100 100);
+ background-color: #304a73;
+ color: #FFFFFF;
+ }
+ .form-register-forget{
+   margin-top: 3%;
+ }
+ .form-register-forget a{
+   text-decoration: none;
+   color: inherit;
+ }
+ .form-register-forget:hover a{
+   font-weight: 600;
+   text-decoration: underline;
+ }
+ .form-register-new a{
+   text-decoration: none;
+   color: inherit;
+ }
+ .form-register-new:hover a{
+   font-weight: 600;
+   text-decoration: underline;
+ }
+ .form-register-img{
+  display: none;
+ }
+ .img-icon{
+    font-size: 48px;
+    color: #FFFFFF;
+    cursor: pointer;
+ }
+ .img-icon:hover{
+  font-size: 50px;
+  color: #304a73;
+ }
+ @media (min-width: 768px){
+   .form-register{
+     margin: 2% 0;
+     width: 768px;
+     border-radius: 10px;
+     box-shadow: 0 0 20px rgb(100 100 100);
+   }
+ }
+
